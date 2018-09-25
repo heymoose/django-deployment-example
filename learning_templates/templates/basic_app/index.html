@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+  {% load extra_filters %}
+  {% block body_block %}
+    <h1>Welcome to Index</h1>
+    <h2>This is index.html page showing, dawg</h2>
+
+    <!-- Example of template filters using the | character -->
+    <h1>{{ sample_text|custom_cut:'Wooorld' }}</h1>
+    <h1>{{ sample_number|add:'50' }}</h1>
+  {% endblock %}
